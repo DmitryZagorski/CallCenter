@@ -2,12 +2,12 @@ package com.epam.call_center.models;
 
 public class Employee {
     private String name;
-    private CallType callType;
+    private EmployeeStatus employeeStatus;
     private EmployeeType employeeType;
 
-    public Employee(String name, CallType callType, EmployeeType employeeType) {
+    public Employee(String name, EmployeeStatus employeeStatus, EmployeeType employeeType) {
         this.name = name;
-        this.callType = callType;
+        this.employeeStatus = employeeStatus;
         this.employeeType = employeeType;
     }
 
@@ -19,12 +19,12 @@ public class Employee {
         this.name = name;
     }
 
-    public CallType getCallType() {
-        return callType;
+    public EmployeeStatus getEmployeeStatus() {
+        return employeeStatus;
     }
 
-    public void setCallType(CallType callType) {
-        this.callType = callType;
+    public void setEmployeeStatus(EmployeeStatus employeeStatus) {
+        this.employeeStatus = employeeStatus;
     }
 
     public EmployeeType getEmployeeType() {
